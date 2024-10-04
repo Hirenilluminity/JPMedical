@@ -1,0 +1,58 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        form {
+            padding-left: 4%;
+            padding-right: 4%;
+            margin-top: 28%;
+            margin-bottom: 25%;
+            margin-left: 30%;
+            padding-bottom: 6%;
+            padding-top: 2%;
+            margin-right: 40%;
+            background-color: whitesmoke;
+            border-radius: 32px;
+        }
+        img.img-fluid.logo {
+            margin-top: 14%;
+            margin-left: 30%;
+        }
+        button.btn.btn-primary {
+            width: 50%;
+            margin-left: 25%;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <a class="navbar-brand" href="/Home/Index"> <img class="img-fluid logo" src="~/images/logo.png" alt="medicate" width="30%"> </a>
+        <form>
+            <h1 style="font-family: cursive;text-align:center;">Login</h1>
+            <hr style="border-top: 1px solid #3c97e5;">
+            <div class="form-group">
+                <label for="email" style="font-family: cursive;">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+            </div>
+            <div class="form-group">
+                <label for="pwd" style="font-family: cursive;">Password:</label>
+                <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">
+            </div>
+            <div class="checkbox">
+                <label style="font-family: cursive;"><input type="checkbox" name="remember" > Remember me</label>
+            </div>
+            <button type="submit" class="btn btn-primary" style="font-family: cursive;">Submit</button>
+        </form>
+    </div>
+
+</body>
+</html>
